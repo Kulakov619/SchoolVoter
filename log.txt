@@ -1,0 +1,207 @@
+2025-10-07 16:29:10,631 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-07 16:29:10,631 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-07 16:29:10,631 [INFO] [werkzeug]  * Restarting with stat
+2025-10-07 16:29:10,718 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-07 16:29:10,724 [INFO] [werkzeug]  * Debugger PIN: 108-583-289
+2025-10-07 16:29:56,467 [INFO] [werkzeug] 127.0.0.1 - - [07/Oct/2025 16:29:56] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-07 16:29:57,101 [INFO] [werkzeug]  * Detected change in '/Users/mrnobody/PycharmProjects/horo_vote_backend/Unit_tests.py', reloading
+2025-10-07 16:29:57,119 [INFO] [werkzeug]  * Restarting with stat
+2025-10-07 16:29:57,216 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-07 16:29:57,219 [INFO] [werkzeug]  * Debugger PIN: 108-583-289
+2025-10-07 16:30:39,230 [INFO] [werkzeug] 127.0.0.1 - - [07/Oct/2025 16:30:39] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-07 16:30:39,610 [INFO] [werkzeug]  * Detected change in '/Users/mrnobody/PycharmProjects/horo_vote_backend/Unit_tests.py', reloading
+2025-10-07 16:30:39,626 [INFO] [werkzeug]  * Restarting with stat
+2025-10-07 16:30:39,721 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-07 16:30:39,725 [INFO] [werkzeug]  * Debugger PIN: 108-583-289
+2025-10-07 16:30:48,298 [INFO] [werkzeug] 127.0.0.1 - - [07/Oct/2025 16:30:48] "[35m[1mGET /api/is_key_used HTTP/1.1[0m" 500 -
+2025-10-07 16:30:48,800 [INFO] [werkzeug]  * Detected change in '/Users/mrnobody/PycharmProjects/horo_vote_backend/Unit_tests.py', reloading
+2025-10-07 16:30:48,821 [INFO] [werkzeug]  * Restarting with stat
+2025-10-07 16:30:48,935 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-07 16:30:48,940 [INFO] [werkzeug]  * Debugger PIN: 108-583-289
+2025-10-07 16:32:06,065 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-07 16:32:06,065 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-07 16:32:06,066 [INFO] [werkzeug]  * Restarting with stat
+2025-10-07 16:32:06,149 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-07 16:32:06,153 [INFO] [werkzeug]  * Debugger PIN: 108-583-289
+2025-10-07 16:32:09,080 [INFO] [werkzeug] 127.0.0.1 - - [07/Oct/2025 16:32:09] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-07 16:32:14,712 [INFO] [werkzeug] 127.0.0.1 - - [07/Oct/2025 16:32:14] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-07 16:32:15,234 [INFO] [werkzeug]  * Detected change in '/Users/mrnobody/PycharmProjects/horo_vote_backend/Unit_tests.py', reloading
+2025-10-07 16:32:15,255 [INFO] [werkzeug]  * Restarting with stat
+2025-10-07 16:32:15,359 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-07 16:32:15,363 [INFO] [werkzeug]  * Debugger PIN: 108-583-289
+2025-10-07 16:32:28,120 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-07 16:32:28,120 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-07 16:32:28,121 [INFO] [werkzeug]  * Restarting with stat
+2025-10-07 16:32:28,209 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-07 16:32:28,213 [INFO] [werkzeug]  * Debugger PIN: 108-583-289
+2025-10-07 16:32:30,683 [INFO] [werkzeug] 127.0.0.1 - - [07/Oct/2025 16:32:30] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-07 16:32:37,462 [INFO] [werkzeug] 127.0.0.1 - - [07/Oct/2025 16:32:37] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-07 16:32:38,308 [INFO] [werkzeug]  * Detected change in '/Users/mrnobody/PycharmProjects/horo_vote_backend/Unit_tests.py', reloading
+2025-10-07 16:32:38,327 [INFO] [werkzeug]  * Restarting with stat
+2025-10-07 16:32:38,448 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-07 16:32:38,452 [INFO] [werkzeug]  * Debugger PIN: 108-583-289
+2025-10-07 16:33:47,134 [INFO] [werkzeug]  * Detected change in '/Users/mrnobody/PycharmProjects/horo_vote_backend/Unit_tests.py', reloading
+2025-10-07 16:33:47,148 [INFO] [werkzeug]  * Restarting with stat
+2025-10-07 16:33:47,275 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-07 16:33:47,280 [INFO] [werkzeug]  * Debugger PIN: 108-583-289
+2025-10-07 16:34:00,417 [INFO] [werkzeug]  * Detected change in '/Users/mrnobody/PycharmProjects/horo_vote_backend/Unit_tests.py', reloading
+2025-10-07 16:34:00,434 [INFO] [werkzeug]  * Restarting with stat
+2025-10-07 16:34:00,544 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-07 16:34:00,548 [INFO] [werkzeug]  * Debugger PIN: 108-583-289
+2025-10-07 16:34:08,594 [INFO] [werkzeug] 127.0.0.1 - - [07/Oct/2025 16:34:08] "POST /api/vote HTTP/1.1" 200 -
+2025-10-07 16:34:08,624 [INFO] [werkzeug]  * Detected change in '/Users/mrnobody/PycharmProjects/horo_vote_backend/Unit_tests.py', reloading
+2025-10-07 16:34:08,637 [INFO] [werkzeug]  * Restarting with stat
+2025-10-07 16:34:08,728 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-07 16:34:08,732 [INFO] [werkzeug]  * Debugger PIN: 108-583-289
+2025-10-07 16:34:18,024 [INFO] [werkzeug] 127.0.0.1 - - [07/Oct/2025 16:34:18] "[35m[1mPOST /api/vote HTTP/1.1[0m" 500 -
+2025-10-07 16:34:18,825 [INFO] [werkzeug]  * Detected change in '/Users/mrnobody/PycharmProjects/horo_vote_backend/Unit_tests.py', reloading
+2025-10-07 16:34:18,843 [INFO] [werkzeug]  * Restarting with stat
+2025-10-07 16:34:18,950 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-07 16:34:18,955 [INFO] [werkzeug]  * Debugger PIN: 108-583-289
+2025-10-07 16:34:32,252 [INFO] [werkzeug] 127.0.0.1 - - [07/Oct/2025 16:34:32] "[35m[1mPOST /api/vote HTTP/1.1[0m" 500 -
+2025-10-07 16:34:33,076 [INFO] [werkzeug]  * Detected change in '/Users/mrnobody/PycharmProjects/horo_vote_backend/main.py', reloading
+2025-10-07 16:34:33,096 [INFO] [werkzeug]  * Restarting with stat
+2025-10-07 16:34:33,209 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-07 16:34:33,213 [INFO] [werkzeug]  * Debugger PIN: 108-583-289
+2025-10-07 16:34:54,250 [INFO] [werkzeug] 127.0.0.1 - - [07/Oct/2025 16:34:54] "POST /api/vote HTTP/1.1" 200 -
+2025-10-07 16:34:54,414 [INFO] [werkzeug]  * Detected change in '/Users/mrnobody/PycharmProjects/horo_vote_backend/Unit_tests.py', reloading
+2025-10-07 16:34:54,431 [INFO] [werkzeug]  * Restarting with stat
+2025-10-07 16:34:54,534 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-07 16:34:54,537 [INFO] [werkzeug]  * Debugger PIN: 108-583-289
+2025-10-07 16:35:03,921 [INFO] [logger] hdjytyeurtyertyerty voted
+2025-10-07 16:35:03,921 [INFO] [logger] 1 has been chosen
+2025-10-07 16:35:03,923 [INFO] [werkzeug] 127.0.0.1 - - [07/Oct/2025 16:35:03] "POST /api/vote HTTP/1.1" 200 -
+2025-10-07 16:35:04,627 [INFO] [werkzeug]  * Detected change in '/Users/mrnobody/PycharmProjects/horo_vote_backend/Unit_tests.py', reloading
+2025-10-07 16:35:04,656 [INFO] [werkzeug]  * Restarting with stat
+2025-10-07 16:35:04,757 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-07 16:35:04,760 [INFO] [werkzeug]  * Debugger PIN: 108-583-289
+2025-10-07 16:35:08,768 [INFO] [werkzeug] 127.0.0.1 - - [07/Oct/2025 16:35:08] "POST /api/vote HTTP/1.1" 200 -
+2025-10-08 09:37:00,964 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-08 09:37:00,964 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-08 09:37:00,965 [INFO] [werkzeug]  * Restarting with stat
+2025-10-08 09:37:01,088 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-08 09:37:01,104 [INFO] [werkzeug]  * Debugger PIN: 509-379-207
+2025-10-08 09:37:07,796 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 09:37:07] "GET / HTTP/1.1" 200 -
+2025-10-08 09:37:08,160 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 09:37:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-08 09:37:41,360 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 09:37:41] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-08 09:37:47,729 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 09:37:47] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-08 09:37:47,766 [INFO] [logger] etyterytreyrtyrtyry voted
+2025-10-08 09:37:47,767 [INFO] [logger] 1 has been chosen
+2025-10-08 09:37:47,768 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 09:37:47] "POST /api/vote HTTP/1.1" 200 -
+2025-10-08 09:42:39,108 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-08 09:42:39,108 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-08 09:42:39,109 [INFO] [werkzeug]  * Restarting with stat
+2025-10-08 09:42:39,234 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-08 09:42:39,236 [INFO] [werkzeug]  * Debugger PIN: 509-379-207
+2025-10-08 09:42:41,282 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 09:42:41] "GET / HTTP/1.1" 200 -
+2025-10-08 09:42:41,351 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 09:42:41] "GET /api/parties HTTP/1.1" 200 -
+2025-10-08 09:46:44,659 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-08 09:46:44,659 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-08 09:46:44,660 [INFO] [werkzeug]  * Restarting with stat
+2025-10-08 09:46:44,782 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-08 09:46:44,784 [INFO] [werkzeug]  * Debugger PIN: 509-379-207
+2025-10-08 09:46:46,616 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 09:46:46] "GET / HTTP/1.1" 200 -
+2025-10-08 09:46:46,721 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 09:46:46] "GET /api/parties HTTP/1.1" 200 -
+2025-10-08 09:47:12,578 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 09:47:12] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-08 09:47:27,578 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 09:47:27] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-08 09:47:27,612 [INFO] [logger] ertyrteeryerrtyttty voted
+2025-10-08 09:47:27,613 [INFO] [logger] 1 has been chosen
+2025-10-08 09:47:27,615 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 09:47:27] "POST /api/vote HTTP/1.1" 200 -
+2025-10-08 09:48:08,094 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 09:48:08] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-08 09:48:08,124 [INFO] [logger] ertyrtyrtyeteertyty voted
+2025-10-08 09:48:08,125 [INFO] [logger] 3 has been chosen
+2025-10-08 09:48:08,126 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 09:48:08] "POST /api/vote HTTP/1.1" 200 -
+2025-10-08 09:54:06,118 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-08 09:54:06,118 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-08 09:54:06,119 [INFO] [werkzeug]  * Restarting with stat
+2025-10-08 09:54:06,293 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-08 09:54:06,295 [INFO] [werkzeug]  * Debugger PIN: 509-379-207
+2025-10-08 09:54:08,156 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 09:54:08] "GET / HTTP/1.1" 200 -
+2025-10-08 09:54:08,405 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 09:54:08] "GET /api/parties HTTP/1.1" 200 -
+2025-10-08 10:25:54,651 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-08 10:25:54,651 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-08 10:25:54,651 [INFO] [werkzeug]  * Restarting with stat
+2025-10-08 10:25:54,819 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-08 10:25:54,821 [INFO] [werkzeug]  * Debugger PIN: 924-551-253
+2025-10-08 10:26:00,867 [INFO] [werkzeug]  * Detected change in '/home/mikle/PycharmProjects/horo_vote_backend/main.py', reloading
+2025-10-08 10:26:00,986 [INFO] [werkzeug]  * Restarting with stat
+2025-10-08 10:26:01,280 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-08 10:26:01,282 [INFO] [werkzeug]  * Debugger PIN: 924-551-253
+2025-10-08 10:26:27,166 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-08 10:26:27,166 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-08 10:26:27,167 [INFO] [werkzeug]  * Restarting with stat
+2025-10-08 10:26:27,363 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-08 10:26:27,365 [INFO] [werkzeug]  * Debugger PIN: 924-551-253
+2025-10-08 10:26:29,211 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 10:26:29] "GET / HTTP/1.1" 200 -
+2025-10-08 10:26:29,253 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 10:26:29] "GET /static/vibori_icon.png HTTP/1.1" 200 -
+2025-10-08 10:26:29,265 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 10:26:29] "GET /api/parties HTTP/1.1" 200 -
+2025-10-08 10:26:33,285 [INFO] [werkzeug] 127.0.0.1 - - [08/Oct/2025 10:26:33] "[36mGET /static/vibori_icon.png HTTP/1.1[0m" 304 -
+2025-10-09 12:11:31,513 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-09 12:11:31,513 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-09 12:11:31,514 [INFO] [werkzeug]  * Restarting with stat
+2025-10-09 12:11:31,690 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-09 12:11:31,709 [INFO] [werkzeug]  * Debugger PIN: 691-649-162
+2025-10-09 12:11:33,393 [INFO] [werkzeug] 127.0.0.1 - - [09/Oct/2025 12:11:33] "GET / HTTP/1.1" 200 -
+2025-10-09 12:11:33,455 [INFO] [werkzeug] 127.0.0.1 - - [09/Oct/2025 12:11:33] "GET /static/vibori_icon.png HTTP/1.1" 200 -
+2025-10-09 12:11:33,460 [INFO] [werkzeug] 127.0.0.1 - - [09/Oct/2025 12:11:33] "GET /api/parties HTTP/1.1" 200 -
+2025-10-09 12:12:02,415 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-09 12:12:02,415 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-09 12:12:02,415 [INFO] [werkzeug]  * Restarting with stat
+2025-10-09 12:12:02,545 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-09 12:12:02,547 [INFO] [werkzeug]  * Debugger PIN: 691-649-162
+2025-10-09 12:12:04,390 [INFO] [werkzeug] 127.0.0.1 - - [09/Oct/2025 12:12:04] "GET / HTTP/1.1" 200 -
+2025-10-09 12:12:04,633 [INFO] [werkzeug] 127.0.0.1 - - [09/Oct/2025 12:12:04] "GET /api/parties HTTP/1.1" 200 -
+2025-10-09 12:12:04,637 [INFO] [werkzeug] 127.0.0.1 - - [09/Oct/2025 12:12:04] "[36mGET /static/vibori_icon.png HTTP/1.1[0m" 304 -
+2025-10-09 12:12:18,375 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-09 12:12:18,375 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-09 12:12:18,375 [INFO] [werkzeug]  * Restarting with stat
+2025-10-09 12:12:18,574 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-09 12:12:18,577 [INFO] [werkzeug]  * Debugger PIN: 691-649-162
+2025-10-09 12:12:20,274 [INFO] [werkzeug] 127.0.0.1 - - [09/Oct/2025 12:12:20] "GET / HTTP/1.1" 200 -
+2025-10-09 12:12:20,591 [INFO] [werkzeug] 127.0.0.1 - - [09/Oct/2025 12:12:20] "GET /api/parties HTTP/1.1" 200 -
+2025-10-09 12:12:20,594 [INFO] [werkzeug] 127.0.0.1 - - [09/Oct/2025 12:12:20] "[36mGET /static/vibori_icon.png HTTP/1.1[0m" 304 -
+2025-10-09 12:12:47,053 [INFO] [werkzeug] 127.0.0.1 - - [09/Oct/2025 12:12:47] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-09 12:12:47,083 [INFO] [logger] tAgEbTPziIvVjOJoaryLJmnQQtoFrv voted
+2025-10-09 12:12:47,088 [INFO] [logger] 1 has been chosen
+2025-10-09 12:12:47,089 [INFO] [werkzeug] 127.0.0.1 - - [09/Oct/2025 12:12:47] "POST /api/vote HTTP/1.1" 200 -
+2025-10-09 12:13:05,940 [INFO] [werkzeug] 127.0.0.1 - - [09/Oct/2025 12:13:05] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-09 12:13:21,437 [INFO] [werkzeug] 127.0.0.1 - - [09/Oct/2025 12:13:21] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-09 12:13:21,475 [INFO] [logger] ywCEsOtWUtAZZjRoXsZfEdJMRHmIDs voted
+2025-10-09 12:13:21,479 [INFO] [logger] 10 has been chosen
+2025-10-09 12:13:21,480 [INFO] [werkzeug] 127.0.0.1 - - [09/Oct/2025 12:13:21] "POST /api/vote HTTP/1.1" 200 -
+2025-10-11 13:28:21,762 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-11 13:28:21,762 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-11 13:28:21,763 [INFO] [werkzeug]  * Restarting with stat
+2025-10-11 13:28:21,967 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-11 13:28:21,985 [INFO] [werkzeug]  * Debugger PIN: 951-807-062
+2025-10-11 13:28:25,116 [INFO] [werkzeug] 127.0.0.1 - - [11/Oct/2025 13:28:25] "GET / HTTP/1.1" 200 -
+2025-10-11 13:28:25,205 [INFO] [werkzeug] 127.0.0.1 - - [11/Oct/2025 13:28:25] "GET /api/parties HTTP/1.1" 200 -
+2025-10-11 13:28:25,207 [INFO] [werkzeug] 127.0.0.1 - - [11/Oct/2025 13:28:25] "GET /static/vibori_icon.png HTTP/1.1" 200 -
+2025-10-13 17:34:10,914 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-13 17:34:10,915 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-13 17:34:10,915 [INFO] [werkzeug]  * Restarting with stat
+2025-10-13 17:34:11,039 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-13 17:34:11,046 [INFO] [werkzeug]  * Debugger PIN: 758-355-339
+2025-10-13 17:34:12,677 [INFO] [werkzeug] 127.0.0.1 - - [13/Oct/2025 17:34:12] "GET / HTTP/1.1" 200 -
+2025-10-13 17:34:12,734 [INFO] [werkzeug] 127.0.0.1 - - [13/Oct/2025 17:34:12] "GET /static/vibori_icon.png HTTP/1.1" 200 -
+2025-10-13 17:34:12,844 [INFO] [werkzeug] 127.0.0.1 - - [13/Oct/2025 17:34:12] "GET /api/parties HTTP/1.1" 200 -
+2025-10-13 17:35:09,764 [INFO] [werkzeug] 127.0.0.1 - - [13/Oct/2025 17:35:09] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-13 17:35:09,777 [INFO] [logger] rwylOdGXNJhwboOnQUzqXVDcMItdza voted
+2025-10-13 17:35:09,778 [INFO] [logger] 2 has been chosen
+2025-10-13 17:35:09,778 [INFO] [werkzeug] 127.0.0.1 - - [13/Oct/2025 17:35:09] "POST /api/vote HTTP/1.1" 200 -
+2025-10-13 17:35:29,294 [INFO] [werkzeug] 127.0.0.1 - - [13/Oct/2025 17:35:29] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-13 17:35:41,546 [INFO] [werkzeug] 127.0.0.1 - - [13/Oct/2025 17:35:41] "GET /api/is_key_used HTTP/1.1" 200 -

@@ -1,0 +1,72 @@
+{
+  "1": {
+    "name": "Lets be friends",
+    "description": "",
+    "color": "#4CAF50",
+    "gradient": "linear-gradient(135deg, #4CAF50, #45a049)",
+    "icon": ""
+  },
+  "2": {
+    "name": "KhoroParty",
+    "description": "",
+    "color": "#2196F3",
+    "gradient": "linear-gradient(135deg, #2196F3, #1976D2)",
+    "icon": ""
+  },
+  "3": {
+    "name": "Единая Хорошкола",
+    "description": "",
+    "color": "#FF9800",
+    "gradient": "linear-gradient(135deg, #FF9800, #F57C00)",
+    "icon": ""
+  },
+  "4": {
+    "name": "KhoroTech",
+    "description": "",
+    "color": "#FF9800",
+    "gradient": "linear-gradient(135deg, #FF9800, #F57C00)",
+    "icon": ""
+  },
+  "5": {
+    "name": "Prime",
+    "description": "",
+    "color": "#FF9800",
+    "gradient": "linear-gradient(135deg, #FF9800, #F57C00)",
+    "icon": ""
+  },
+  "6": {
+    "name": "КосмоЕ",
+    "description": "",
+    "color": "#FF9800",
+    "gradient": "linear-gradient(135deg, #FF9800, #F57C00)",
+    "icon": ""
+  },
+  "7": {
+    "name": "ХСДУП",
+    "description": "Хорошкольная социальная демократическая ученическая партия",
+    "color": "#FF9800",
+    "gradient": "linear-gradient(135deg, #FF9800, #F57C00)",
+    "icon": ""
+  },
+  "8": {
+    "name": "Кос-мопсы",
+    "description": "",
+    "color": "#FF9800",
+    "gradient": "linear-gradient(135deg, #FF9800, #F57C00)",
+    "icon": ""
+  },
+  "9": {
+    "name": "Демократическая партия хорошкольников",
+    "description": "",
+    "color": "#FF9800",
+    "gradient": "linear-gradient(135deg, #FF9800, #F57C00)",
+    "icon": ""
+  },
+  "10": {
+    "name": "Хоротрадиции",
+    "description": "",
+    "color": "#FF9800",
+    "gradient": "linear-gradient(135deg, #FF9800, #F57C00)",
+    "icon": ""
+  }
+}
