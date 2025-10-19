@@ -14,17 +14,19 @@ logging.basicConfig(
 )
 logger = logging.getLogger("logger")
 
-db = load_from_json("keys.json")
-res = load_from_json("results.json")
 parties_data = load_from_json("parties.json")
 
 def set_key_already_used(key: str):
+    db = load_from_json("keys.json")
+
     db[key] = True
     logger.info(f"{key} voted")
     save_to_json(db, "keys.json")
 
 
 def add_results(num: str):
+    res = load_from_json("results.json")
+
     res[num] = res.get(num, 0) + 1
     logger.info(f"{num} has been chosen")
     save_to_json(res, "results.json")
@@ -32,6 +34,8 @@ def add_results(num: str):
 
 @app.route('/api/is_key_used', methods=['GET'])
 def is_key_used():
+    db = load_from_json("keys.json")
+
     key = str(request.headers.get("key"))
 
     if key not in db:
@@ -47,6 +51,8 @@ def is_key_used():
 
 @app.route('/api/vote', methods=['POST'])
 def vote():
+    db = load_from_json("keys.json")
+
     num = str(request.headers.get("number"))
     key = str(request.headers.get("key"))
 
@@ -506,4 +512,4 @@ def home():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)

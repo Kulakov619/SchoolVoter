@@ -181,27 +181,78 @@
 2025-10-09 12:13:21,475 [INFO] [logger] ywCEsOtWUtAZZjRoXsZfEdJMRHmIDs voted
 2025-10-09 12:13:21,479 [INFO] [logger] 10 has been chosen
 2025-10-09 12:13:21,480 [INFO] [werkzeug] 127.0.0.1 - - [09/Oct/2025 12:13:21] "POST /api/vote HTTP/1.1" 200 -
-2025-10-11 13:28:21,762 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-10-18 18:56:00,494 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2025-10-11 13:28:21,762 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
-2025-10-11 13:28:21,763 [INFO] [werkzeug]  * Restarting with stat
-2025-10-11 13:28:21,967 [WARNING] [werkzeug]  * Debugger is active!
-2025-10-11 13:28:21,985 [INFO] [werkzeug]  * Debugger PIN: 951-807-062
-2025-10-11 13:28:25,116 [INFO] [werkzeug] 127.0.0.1 - - [11/Oct/2025 13:28:25] "GET / HTTP/1.1" 200 -
-2025-10-11 13:28:25,205 [INFO] [werkzeug] 127.0.0.1 - - [11/Oct/2025 13:28:25] "GET /api/parties HTTP/1.1" 200 -
-2025-10-11 13:28:25,207 [INFO] [werkzeug] 127.0.0.1 - - [11/Oct/2025 13:28:25] "GET /static/vibori_icon.png HTTP/1.1" 200 -
-2025-10-13 17:34:10,914 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-10-18 18:56:00,495 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-18 18:56:00,495 [INFO] [werkzeug]  * Restarting with stat
+2025-10-18 18:56:00,633 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-18 18:56:00,635 [INFO] [werkzeug]  * Debugger PIN: 557-444-775
+2025-10-18 18:56:02,848 [INFO] [werkzeug] 127.0.0.1 - - [18/Oct/2025 18:56:02] "GET / HTTP/1.1" 200 -
+2025-10-18 18:56:02,903 [INFO] [werkzeug] 127.0.0.1 - - [18/Oct/2025 18:56:02] "GET /static/vibori_icon.png HTTP/1.1" 200 -
+2025-10-18 18:56:03,061 [INFO] [werkzeug] 127.0.0.1 - - [18/Oct/2025 18:56:03] "GET /api/parties HTTP/1.1" 200 -
+2025-10-18 18:56:34,155 [INFO] [werkzeug] 127.0.0.1 - - [18/Oct/2025 18:56:34] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-18 18:56:34,172 [INFO] [logger] EnyIkVyysvodUqsjfAJnJGaRqXOZXX voted
+2025-10-18 18:56:34,173 [INFO] [logger] 2 has been chosen
+2025-10-18 18:56:34,173 [INFO] [werkzeug] 127.0.0.1 - - [18/Oct/2025 18:56:34] "POST /api/vote HTTP/1.1" 200 -
+2025-10-18 18:56:47,314 [INFO] [werkzeug] 127.0.0.1 - - [18/Oct/2025 18:56:47] "[33mPOST /check_vote HTTP/1.1[0m" 404 -
+2025-10-18 21:56:31,452 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2025-10-13 17:34:10,915 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
-2025-10-13 17:34:10,915 [INFO] [werkzeug]  * Restarting with stat
-2025-10-13 17:34:11,039 [WARNING] [werkzeug]  * Debugger is active!
-2025-10-13 17:34:11,046 [INFO] [werkzeug]  * Debugger PIN: 758-355-339
-2025-10-13 17:34:12,677 [INFO] [werkzeug] 127.0.0.1 - - [13/Oct/2025 17:34:12] "GET / HTTP/1.1" 200 -
-2025-10-13 17:34:12,734 [INFO] [werkzeug] 127.0.0.1 - - [13/Oct/2025 17:34:12] "GET /static/vibori_icon.png HTTP/1.1" 200 -
-2025-10-13 17:34:12,844 [INFO] [werkzeug] 127.0.0.1 - - [13/Oct/2025 17:34:12] "GET /api/parties HTTP/1.1" 200 -
-2025-10-13 17:35:09,764 [INFO] [werkzeug] 127.0.0.1 - - [13/Oct/2025 17:35:09] "GET /api/is_key_used HTTP/1.1" 200 -
-2025-10-13 17:35:09,777 [INFO] [logger] rwylOdGXNJhwboOnQUzqXVDcMItdza voted
-2025-10-13 17:35:09,778 [INFO] [logger] 2 has been chosen
-2025-10-13 17:35:09,778 [INFO] [werkzeug] 127.0.0.1 - - [13/Oct/2025 17:35:09] "POST /api/vote HTTP/1.1" 200 -
-2025-10-13 17:35:29,294 [INFO] [werkzeug] 127.0.0.1 - - [13/Oct/2025 17:35:29] "GET /api/is_key_used HTTP/1.1" 200 -
-2025-10-13 17:35:41,546 [INFO] [werkzeug] 127.0.0.1 - - [13/Oct/2025 17:35:41] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-18 21:56:31,452 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-18 21:56:31,453 [INFO] [werkzeug]  * Restarting with stat
+2025-10-18 21:56:31,675 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-18 21:56:31,680 [INFO] [werkzeug]  * Debugger PIN: 557-444-775
+2025-10-18 21:56:35,104 [INFO] [werkzeug] 127.0.0.1 - - [18/Oct/2025 21:56:35] "GET / HTTP/1.1" 200 -
+2025-10-18 21:56:35,165 [INFO] [werkzeug] 127.0.0.1 - - [18/Oct/2025 21:56:35] "[36mGET /static/vibori_icon.png HTTP/1.1[0m" 304 -
+2025-10-18 21:56:35,230 [INFO] [werkzeug] 127.0.0.1 - - [18/Oct/2025 21:56:35] "GET /api/parties HTTP/1.1" 200 -
+2025-10-19 07:58:54,594 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.221:5000
+2025-10-19 07:58:54,594 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-19 07:58:54,594 [INFO] [werkzeug]  * Restarting with stat
+2025-10-19 07:58:54,795 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-19 07:58:54,798 [INFO] [werkzeug]  * Debugger PIN: 557-444-775
+2025-10-19 07:58:57,664 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 07:58:57] "GET / HTTP/1.1" 200 -
+2025-10-19 07:58:57,719 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 07:58:57] "[36mGET /static/vibori_icon.png HTTP/1.1[0m" 304 -
+2025-10-19 07:58:57,831 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 07:58:57] "GET /api/parties HTTP/1.1" 200 -
+2025-10-19 07:59:51,366 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 07:59:51] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-19 07:59:51,379 [INFO] [logger] VgVIsNKsaWiSivkAEDFpDlpFTJakzO voted
+2025-10-19 07:59:51,379 [INFO] [logger] 1 has been chosen
+2025-10-19 07:59:51,380 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 07:59:51] "POST /api/vote HTTP/1.1" 200 -
+2025-10-19 08:00:21,836 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:00:21] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-19 08:00:40,869 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:00:40] "GET / HTTP/1.1" 200 -
+2025-10-19 08:00:40,979 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:00:40] "GET /api/parties HTTP/1.1" 200 -
+2025-10-19 08:00:40,979 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:00:40] "[36mGET /static/vibori_icon.png HTTP/1.1[0m" 304 -
+2025-10-19 08:00:48,054 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:00:48] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-19 08:00:48,067 [INFO] [logger] iDYtDMOYWUZeIJmwKKAFzoJUpPQDiP voted
+2025-10-19 08:00:48,067 [INFO] [logger] 2 has been chosen
+2025-10-19 08:00:48,068 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:00:48] "POST /api/vote HTTP/1.1" 200 -
+2025-10-19 08:00:58,086 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:00:58] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-19 08:01:54,951 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.221:5000
+2025-10-19 08:01:54,952 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-19 08:01:54,952 [INFO] [werkzeug]  * Restarting with stat
+2025-10-19 08:01:55,154 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-19 08:01:55,157 [INFO] [werkzeug]  * Debugger PIN: 557-444-775
+2025-10-19 08:02:50,577 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:02:50] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-19 08:02:50,591 [INFO] [logger] rUVJvXfeKaYeIkErUPOewbTizUAEYF voted
+2025-10-19 08:02:50,591 [INFO] [logger] 1 has been chosen
+2025-10-19 08:02:50,592 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:02:50] "POST /api/vote HTTP/1.1" 200 -
+2025-10-19 08:07:28,099 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.221:5000
+2025-10-19 08:07:28,099 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-19 08:07:28,100 [INFO] [werkzeug]  * Restarting with stat
+2025-10-19 08:07:28,241 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-19 08:07:28,242 [INFO] [werkzeug]  * Debugger PIN: 557-444-775
+2025-10-19 08:07:31,083 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:07:31] "GET / HTTP/1.1" 200 -
+2025-10-19 08:07:31,251 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:07:31] "GET /api/parties HTTP/1.1" 200 -
+2025-10-19 08:07:31,266 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:07:31] "[36mGET /static/vibori_icon.png HTTP/1.1[0m" 304 -
+2025-10-19 08:08:14,449 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:08:14] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-19 08:08:14,465 [INFO] [logger] GNvtBJpDhQhuzMsQUdacgFYOObMmXd voted
+2025-10-19 08:08:14,466 [INFO] [logger] 1 has been chosen
+2025-10-19 08:08:14,466 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:08:14] "POST /api/vote HTTP/1.1" 200 -
+2025-10-19 08:08:30,587 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:08:30] "GET /api/is_key_used HTTP/1.1" 200 -

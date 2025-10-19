@@ -1,7 +1,12 @@
 import json
 from random import randint
 
-KEYS_COUNT = 1000
+from JsonDecorator import save_to_json
+
+with open("Names.txt", "r") as f:
+    names = f.read().split(", ")
+    KEYS_COUNT = len(names)
+
 KEY_LENGTH = 30
 
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -26,5 +31,11 @@ keys_dict = {}
 for key in keys:
     keys_dict[key] = False
 
-with open("keys.json", "w") as f:
-    json.dump(keys_dict, f, indent=2)
+save_to_json(keys_dict, "keys.json")
+
+names_to_keys = {}
+
+for i in range(KEYS_COUNT):
+    names_to_keys[names[i]] = keys[i]
+
+save_to_json(names_to_keys, "names_to_keys.json", encoding="utf-32")

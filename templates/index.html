@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка голосования</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+        
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+            box-sizing: border-box;
+        }
+        
+        input[type="text"]:focus, input[type="password"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            width: 100%;
+            margin: 5px;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .result {
+            margin-top: 25px;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .result.voted {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .result.not_voted {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .parties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .party-card {
+            border: 2px solid #e1e5e9;
+            border-radius: 16px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .party-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .party-card.selected {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+        }
+        
+        .party-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .party-description {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+        
+        .vote-section {
+            display: none;
+            margin-top: 30px;
+        }
+        
+        .hidden {
+            display: none !important;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗳️ Проверка голосования</h1>
+        
+        <!-- Основная функциональность -->
+        
+        <form method="POST" action="/check_vote">
+            <div class="form-group">
+                <label for="full_name">Введите ФИО:</label>
+                <input type="text" id="full_name" name="full_name" 
+                       value="{{ full_name if full_name else '' }}" 
+                       placeholder="Иванов Иван Иванович" required>
+            </div>
+            
+            <button type="submit">Проверить голосование</button>
+        </form>
+        
+        {% if result %}
+        <div class="result {{ status }}">
+            <div class="icon">
+                {% if status == 'voted' %}
+                    ✅
+                {% else %}
+                    ❌
+                {% endif %}
+            </div>
+            <strong>{{ full_name }}</strong><br>
+            Голосовал: <strong>{{ result }}</strong>
+            
+            {% if status == 'not_voted' %}
+            <div class="vote-section" id="voteSection" data-full-name="{{ full_name }}">
+                <h3>Проголосовать</h3>
+                
+                <div class="form-group">
+                    <label for="admin_password">Admin пароль для голосования:</label>
+                    <input type="password" id="admin_password" placeholder="Введите admin пароль" required>
+                </div>
+                
+                <div class="parties-grid" id="partiesGrid">
+                    <!-- Партии будут загружены динамически -->
+                </div>
+                
+                <button type="button" id="voteBtn" onclick="submitVote()" disabled>
+                    Проголосовать
+                </button>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+        
+        {% if error %}
+        <div class="error">
+            {{ error }}
+        </div>
+        {% endif %}
+    </div>
+    
+    <script>
+        let parties = {};
+        let selectedParty = null;
+        
+        // Показываем секцию голосования если пользователь не голосовал
+        document.addEventListener('DOMContentLoaded', function() {
+            const voteSection = document.getElementById('voteSection');
+            if (voteSection) {
+                voteSection.style.display = 'block';
+                loadParties();
+            }
+        });
+        
+        // Загрузка данных о партиях
+        async function loadParties() {
+            try {
+                const response = await fetch('/api/parties');
+                parties = await response.json();
+                renderParties();
+            } catch (error) {
+                console.error('Ошибка загрузки партий:', error);
+            }
+        }
+        
+        function renderParties() {
+            const grid = document.getElementById('partiesGrid');
+            if (!grid) return;
+            
+            grid.innerHTML = '';
+            
+            Object.entries(parties).forEach(([id, party]) => {
+                const card = document.createElement('div');
+                card.className = 'party-card';
+                card.dataset.partyId = id;
+                
+                card.innerHTML = `
+                    <div class="party-name">${party.name}</div>
+                    <div class="party-description">${party.description || ''}</div>
+                `;
+                
+                card.addEventListener('click', () => selectParty(id, card));
+                grid.appendChild(card);
+            });
+        }
+        
+        function selectParty(partyId, cardElement) {
+            // Убираем выделение с предыдущей карточки
+            document.querySelectorAll('.party-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            
+            // Выделяем новую карточку
+            cardElement.classList.add('selected');
+            selectedParty = partyId;
+            document.getElementById('voteBtn').disabled = false;
+        }
+        
+        async function submitVote() {
+            const voteBtn = document.getElementById('voteBtn');
+            const voteSection = document.getElementById('voteSection');
+            const fullName = voteSection ? voteSection.getAttribute('data-full-name') : '';
+            const adminPassword = document.getElementById('admin_password').value.trim();
+            
+            if (!selectedParty) {
+                alert('Пожалуйста, выберите партию');
+                return;
+            }
+            
+            if (!fullName) {
+                alert('Ошибка: не удалось определить ФИО');
+                return;
+            }
+            
+            if (!adminPassword) {
+                alert('Пожалуйста, введите admin пароль');
+                return;
+            }
+            
+            voteBtn.disabled = true;
+            voteBtn.textContent = 'Обработка...';
+            
+            try {
+                const response = await fetch('/api/vote', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        full_name: fullName,
+                        party_id: selectedParty,
+                        admin_password: adminPassword
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    alert('Голос успешно засчитан!');
+                    location.reload();
+                } else {
+                    alert('Ошибка: ' + result.message);
+                }
+            } catch (error) {
+                alert('Ошибка соединения: ' + error.message);
+            } finally {
+                voteBtn.disabled = false;
+                voteBtn.textContent = 'Проголосовать';
+            }
+        }
+    </script>
+</body>
+</html>
