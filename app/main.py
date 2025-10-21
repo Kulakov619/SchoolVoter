@@ -104,7 +104,6 @@ def get_parties():
 @app.route('/api/recaptcha_site_key', methods=['GET'])
 def get_recaptcha_site_key():
     from flask import jsonify
-    print(RECAPTCHA_SITE_KEY)
     return jsonify({"site_key": RECAPTCHA_SITE_KEY})
 
 
