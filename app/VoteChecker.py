@@ -146,4 +146,5 @@ def vote():
         return jsonify({'success': False, 'message': f'Ошибка: {str(e)}'})
 
 if __name__ == '__main__':
+    app.secret_key = os.getenv("FLASK_SECRET_KEY", "unsafe-dev-key")
     app.run(debug=False, host='0.0.0.0', port=5000)
