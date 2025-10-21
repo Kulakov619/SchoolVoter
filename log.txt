@@ -256,3 +256,117 @@
 2025-10-19 08:08:14,466 [INFO] [logger] 1 has been chosen
 2025-10-19 08:08:14,466 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:08:14] "POST /api/vote HTTP/1.1" 200 -
 2025-10-19 08:08:30,587 [INFO] [werkzeug] 127.0.0.1 - - [19/Oct/2025 08:08:30] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-21 10:48:31,440 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.6.30.126:5000
+2025-10-21 10:48:31,440 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-21 10:48:31,441 [INFO] [werkzeug]  * Restarting with stat
+2025-10-21 10:48:31,648 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-21 10:48:31,655 [INFO] [werkzeug]  * Debugger PIN: 961-334-724
+2025-10-21 10:48:33,783 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 10:48:33] "GET / HTTP/1.1" 200 -
+2025-10-21 10:48:33,824 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 10:48:33] "GET /static/vibori_icon.png HTTP/1.1" 200 -
+2025-10-21 10:48:33,991 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 10:48:33] "GET /api/parties HTTP/1.1" 200 -
+2025-10-21 10:52:31,832 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.6.30.126:5000
+2025-10-21 10:52:31,833 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-21 10:52:31,833 [INFO] [werkzeug]  * Restarting with stat
+2025-10-21 10:52:32,040 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-21 10:52:32,042 [INFO] [werkzeug]  * Debugger PIN: 961-334-724
+2025-10-21 10:52:34,114 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 10:52:34] "GET / HTTP/1.1" 200 -
+2025-10-21 10:52:34,176 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 10:52:34] "[36mGET /static/vibori_icon.png HTTP/1.1[0m" 304 -
+2025-10-21 10:52:34,328 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 10:52:34] "GET /api/parties HTTP/1.1" 200 -
+2025-10-21 10:52:48,524 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 10:52:48] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-21 10:58:50,162 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.6.30.126:5000
+2025-10-21 10:58:50,162 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-21 10:58:50,162 [INFO] [werkzeug]  * Restarting with stat
+2025-10-21 10:58:50,285 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-21 10:58:50,286 [INFO] [werkzeug]  * Debugger PIN: 961-334-724
+2025-10-21 10:58:52,189 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 10:58:52] "GET / HTTP/1.1" 200 -
+2025-10-21 10:58:52,245 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 10:58:52] "[36mGET /static/vibori_icon.png HTTP/1.1[0m" 304 -
+2025-10-21 10:58:52,356 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 10:58:52] "GET /api/parties HTTP/1.1" 200 -
+2025-10-21 10:59:03,632 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 10:59:03] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-21 10:59:03,768 [INFO] [logger] GPDOdMeMQqAVRWdxOGpbeIlLcHEorp voted
+2025-10-21 10:59:03,769 [INFO] [logger] 1 has been chosen
+2025-10-21 10:59:03,769 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 10:59:03] "POST /api/vote HTTP/1.1" 200 -
+2025-10-21 16:03:01,284 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.6.31.124:5000
+2025-10-21 16:03:01,285 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-21 16:03:01,285 [INFO] [werkzeug]  * Restarting with stat
+2025-10-21 16:03:01,555 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-21 16:03:01,568 [INFO] [werkzeug]  * Debugger PIN: 106-096-307
+2025-10-21 16:03:03,933 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:03:03] "GET / HTTP/1.1" 200 -
+2025-10-21 16:03:04,003 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:03:04] "GET /static/vibori_icon.png HTTP/1.1" 200 -
+2025-10-21 16:03:04,120 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:03:04] "GET /api/recaptcha_site_key HTTP/1.1" 200 -
+2025-10-21 16:03:04,121 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:03:04] "GET /api/parties HTTP/1.1" 200 -
+2025-10-21 16:04:44,681 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:04:44] "GET / HTTP/1.1" 200 -
+2025-10-21 16:04:44,766 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:04:44] "GET /static/vibori_icon.png HTTP/1.1" 200 -
+2025-10-21 16:04:44,928 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:04:44] "GET /api/parties HTTP/1.1" 200 -
+2025-10-21 16:04:44,929 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:04:44] "GET /api/recaptcha_site_key HTTP/1.1" 200 -
+2025-10-21 16:05:10,015 [INFO] [werkzeug]  * Detected change in '/home/mikle/Downloads/horo_vote/main.py', reloading
+2025-10-21 16:05:10,059 [INFO] [werkzeug]  * Restarting with stat
+2025-10-21 16:05:10,404 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-21 16:05:10,410 [INFO] [werkzeug]  * Debugger PIN: 106-096-307
+2025-10-21 16:05:14,437 [INFO] [werkzeug]  * Detected change in '/home/mikle/Downloads/horo_vote/main.py', reloading
+2025-10-21 16:05:14,482 [INFO] [werkzeug]  * Restarting with stat
+2025-10-21 16:05:14,744 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-21 16:05:14,746 [INFO] [werkzeug]  * Debugger PIN: 106-096-307
+2025-10-21 16:05:17,764 [INFO] [werkzeug]  * Detected change in '/home/mikle/Downloads/horo_vote/main.py', reloading
+2025-10-21 16:05:17,804 [INFO] [werkzeug]  * Restarting with stat
+2025-10-21 16:05:18,063 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-21 16:05:18,065 [INFO] [werkzeug]  * Debugger PIN: 106-096-307
+2025-10-21 16:05:29,381 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.6.31.124:5000
+2025-10-21 16:05:29,381 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-21 16:05:29,382 [INFO] [werkzeug]  * Restarting with stat
+2025-10-21 16:05:29,564 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-21 16:05:29,565 [INFO] [werkzeug]  * Debugger PIN: 106-096-307
+2025-10-21 16:05:31,991 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:05:31] "GET / HTTP/1.1" 200 -
+2025-10-21 16:05:32,064 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:05:32] "[36mGET /static/vibori_icon.png HTTP/1.1[0m" 304 -
+2025-10-21 16:05:32,215 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:05:32] "GET /api/parties HTTP/1.1" 200 -
+2025-10-21 16:05:32,216 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:05:32] "GET /api/recaptcha_site_key HTTP/1.1" 200 -
+2025-10-21 16:06:40,241 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:06:40] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-21 16:06:40,509 [INFO] [logger] MBUIgDLzvBTBxpMmBrikfymAGJpFcC voted
+2025-10-21 16:06:40,509 [INFO] [logger] 1 has been chosen
+2025-10-21 16:06:40,510 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:06:40] "POST /api/vote HTTP/1.1" 200 -
+2025-10-21 16:09:47,417 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.6.31.124:5000
+2025-10-21 16:09:47,417 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-21 16:09:47,417 [INFO] [werkzeug]  * Restarting with stat
+2025-10-21 16:09:47,561 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-21 16:09:47,562 [INFO] [werkzeug]  * Debugger PIN: 106-096-307
+2025-10-21 16:09:52,304 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:09:52] "GET / HTTP/1.1" 200 -
+2025-10-21 16:09:52,384 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:09:52] "[36mGET /static/vibori_icon.png HTTP/1.1[0m" 304 -
+2025-10-21 16:09:52,525 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:09:52] "GET /api/parties HTTP/1.1" 200 -
+2025-10-21 16:09:52,526 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:09:52] "GET /api/recaptcha_site_key HTTP/1.1" 200 -
+2025-10-21 16:12:51,071 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:12:51] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-21 16:12:51,255 [INFO] [logger] yfrguGwbtvEkAHlGrmbHlWtMVAqIWw voted
+2025-10-21 16:12:51,255 [INFO] [logger] 7 has been chosen
+2025-10-21 16:12:51,256 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:12:51] "POST /api/vote HTTP/1.1" 200 -
+2025-10-21 16:14:39,437 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.6.31.124:5000
+2025-10-21 16:14:39,437 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-21 16:14:39,438 [INFO] [werkzeug]  * Restarting with stat
+2025-10-21 16:14:39,688 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-21 16:14:39,690 [INFO] [werkzeug]  * Debugger PIN: 106-096-307
+2025-10-21 16:14:50,504 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:14:50] "GET / HTTP/1.1" 200 -
+2025-10-21 16:14:50,608 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:14:50] "[36mGET /static/vibori_icon.png HTTP/1.1[0m" 304 -
+2025-10-21 16:14:50,706 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:14:50] "GET /api/parties HTTP/1.1" 200 -
+2025-10-21 16:14:50,707 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:14:50] "GET /api/recaptcha_site_key HTTP/1.1" 200 -
+2025-10-21 16:15:01,500 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:15:01] "GET /api/is_key_used HTTP/1.1" 200 -
+2025-10-21 16:15:01,805 [INFO] [logger] YFaFDyaUXgJyaqcPJtWnadkIuZrSor voted
+2025-10-21 16:15:01,806 [INFO] [logger] 1 has been chosen
+2025-10-21 16:15:01,806 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:15:01] "POST /api/vote HTTP/1.1" 200 -

@@ -1,8 +1,13 @@
 from JsonDecorator import *
 import logging
 from flask import Flask, request
+import requests
 
 app = Flask(__name__)
+
+RECAPTCHA_SITE_KEY = "6Ldz-vErAAAAAMVX6mKp384iLFWNN41OFAv4pwlX"
+RECAPTCHA_SECRET_KEY = "6Ldz-vErAAAAAE-OJ5b-yUqffJwvVPwAq2U1coJv"
+RECAPTCHA_VERIFY_URL = "https://www.google.com/recaptcha/api/siteverify"
 
 logging.basicConfig(
     level=logging.INFO,
@@ -32,6 +37,21 @@ def add_results(num: str):
     save_to_json(res, "results.json")
 
 
+def verify_recaptcha(recaptcha_response: str) -> bool:
+    """Проверяет reCAPTCHA токен"""
+    try:
+        data = {
+            'secret': RECAPTCHA_SECRET_KEY,
+            'response': recaptcha_response
+        }
+        response = requests.post(RECAPTCHA_VERIFY_URL, data=data, timeout=10)
+        result = response.json()
+        return result.get('success', False)
+    except Exception as e:
+        logger.error(f"Ошибка проверки reCAPTCHA: {e}")
+        return False
+
+
 @app.route('/api/is_key_used', methods=['GET'])
 def is_key_used():
     db = load_from_json("keys.json")
@@ -55,6 +75,11 @@ def vote():
 
     num = str(request.headers.get("number"))
     key = str(request.headers.get("key"))
+    recaptcha_response = str(request.headers.get("recaptcha"))
+
+    # Проверяем reCAPTCHA
+    if not verify_recaptcha(recaptcha_response):
+        return "recaptcha_failed"
 
     if key not in db:
         return "not_in_database"
@@ -75,6 +100,12 @@ def get_parties():
     return jsonify(parties_data)
 
 
+@app.route('/api/recaptcha_site_key', methods=['GET'])
+def get_recaptcha_site_key():
+    from flask import jsonify
+    return jsonify({"site_key": RECAPTCHA_SITE_KEY})
+
+
 @app.route('/')
 def home():
     return """
@@ -84,6 +115,7 @@ def home():
         <title>Система Голосования</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <style>
             * {
                 margin: 0;
@@ -295,6 +327,12 @@ def home():
                 display: none !important;
             }
             
+            .recaptcha-container {
+                margin: 20px 0;
+                display: flex;
+                justify-content: center;
+            }
+            
             @media (max-width: 768px) {
                 .container {
                     padding: 20px;
@@ -345,6 +383,12 @@ def home():
                     </div>
                 </div>
                 
+                <div class="form-section">
+                    <div class="recaptcha-container">
+                        <div id="recaptcha" class="g-recaptcha" data-sitekey="PLACEHOLDER_SITE_KEY"></div>
+                    </div>
+                </div>
+                
                 <button type="submit" class="submit-btn" id="submitBtn" disabled>
                     ✨ Проголосовать
                 </button>
@@ -356,6 +400,24 @@ def home():
         <script>
             let parties = {};
             let selectedParty = null;
+            let recaptchaSiteKey = '';
+            
+            // Загрузка Site Key для reCAPTCHA
+            async function loadRecaptchaSiteKey() {
+                try {
+                    const response = await fetch('/api/recaptcha_site_key');
+                    const data = await response.json();
+                    recaptchaSiteKey = data.site_key;
+                    
+                    // Обновляем data-sitekey для reCAPTCHA
+                    const recaptchaElement = document.getElementById('recaptcha');
+                    if (recaptchaElement) {
+                        recaptchaElement.setAttribute('data-sitekey', recaptchaSiteKey);
+                    }
+                } catch (error) {
+                    console.error('Ошибка загрузки Site Key:', error);
+                }
+            }
             
             // Загрузка данных о партиях
             async function loadParties() {
@@ -451,6 +513,13 @@ def home():
                     return;
                 }
                 
+                // Проверяем reCAPTCHA
+                const recaptchaResponse = grecaptcha.getResponse();
+                if (!recaptchaResponse) {
+                    showResult('Пожалуйста, пройдите проверку reCAPTCHA', true);
+                    return;
+                }
+                
                 submitBtn.disabled = true;
                 submitBtn.textContent = '⏳ Обработка...';
                 
@@ -474,7 +543,11 @@ def home():
                     // Отправляем голос
                     resp = await fetch('/api/vote', {
                         method: 'POST',
-                        headers: { 'key': key, 'number': selectedParty }
+                        headers: { 
+                            'key': key, 
+                            'number': selectedParty,
+                            'recaptcha': recaptchaResponse
+                        }
                     });
                     status = await resp.text();
 
@@ -488,6 +561,10 @@ def home():
                         });
                         selectedParty = null;
                         submitBtn.disabled = true;
+                        grecaptcha.reset();
+                    } else if (status === "recaptcha_failed") {
+                        showResult("❌ Ошибка проверки reCAPTCHA. Попробуйте еще раз", true);
+                        grecaptcha.reset();
                     } else if (status === "already_used") {
                         showResult("⚠️ Этот ключ уже использован для голосования", true);
                     } else if (status === "not_in_database") {
@@ -503,8 +580,9 @@ def home():
                 }
             });
             
-            // Загружаем партии при загрузке страницы
+            // Загружаем партии и Site Key при загрузке страницы
             loadParties();
+            loadRecaptchaSiteKey();
         </script>
     </body>
     </html>
