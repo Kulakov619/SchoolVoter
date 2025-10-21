@@ -11,6 +11,8 @@ services:
     command: gunicorn -w 4 -b 0.0.0.0:5000 main:app
     ports:
       - "7508:5000"
+    env_file:
+      - app/.env
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:5000"]
       interval: 30s
@@ -26,6 +28,8 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
       - FLASK_ENV=production
+    env_file:
+      - app/.env
     command: gunicorn -w 4 -b 0.0.0.0:5000 VoteChecker:app
     ports:
       - "7509:5000"
