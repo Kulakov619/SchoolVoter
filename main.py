@@ -5,8 +5,8 @@ import requests
 
 app = Flask(__name__)
 
-RECAPTCHA_SITE_KEY = "6Ldz-vErAAAAAMVX6mKp384iLFWNN41OFAv4pwlX"
-RECAPTCHA_SECRET_KEY = "6Ldz-vErAAAAAE-OJ5b-yUqffJwvVPwAq2U1coJv"
+RECAPTCHA_SITE_KEY = "6LfoBPIrAAAAAEL_6NZPo87OAnIPotB80hqcVHBw"
+RECAPTCHA_SECRET_KEY = "6LfoBPIrAAAAAJ9VHd0WenMlnNhMRBtYIHCHqkU_"
 RECAPTCHA_VERIFY_URL = "https://www.google.com/recaptcha/api/siteverify"
 
 logging.basicConfig(
