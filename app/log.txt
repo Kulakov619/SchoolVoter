@@ -370,3 +370,41 @@
 2025-10-21 16:15:01,805 [INFO] [logger] YFaFDyaUXgJyaqcPJtWnadkIuZrSor voted
 2025-10-21 16:15:01,806 [INFO] [logger] 1 has been chosen
 2025-10-21 16:15:01,806 [INFO] [werkzeug] 127.0.0.1 - - [21/Oct/2025 16:15:01] "POST /api/vote HTTP/1.1" 200 -
+2025-10-21 21:12:39,343 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.23.0.2:5000
+2025-10-21 21:12:39,343 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-21 21:12:39,345 [INFO] [werkzeug]  * Restarting with stat
+2025-10-21 21:12:39,444 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-21 21:12:39,445 [INFO] [werkzeug]  * Debugger PIN: 378-289-176
+2025-10-21 21:15:38,566 [INFO] [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.23.0.2:5000
+2025-10-21 21:15:38,566 [INFO] [werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-21 21:15:38,567 [INFO] [werkzeug]  * Restarting with stat
+2025-10-21 21:15:38,662 [WARNING] [werkzeug]  * Debugger is active!
+2025-10-21 21:15:38,663 [INFO] [werkzeug]  * Debugger PIN: 843-741-388
+2025-10-21 21:15:59,030 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:15:59] "GET / HTTP/1.1" 200 -
+2025-10-21 21:15:59,053 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:15:59] "GET /api/parties HTTP/1.1" 200 -
+2025-10-21 21:15:59,054 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:15:59] "GET /api/recaptcha_site_key HTTP/1.1" 200 -
+2025-10-21 21:15:59,055 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:15:59] "GET /static/vibori_icon.png HTTP/1.1" 200 -
+2025-10-21 21:16:01,318 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:16:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-21 21:19:03,250 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:03] "GET / HTTP/1.1" 200 -
+2025-10-21 21:19:03,271 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:03] "[36mGET /static/vibori_icon.png HTTP/1.1[0m" 304 -
+2025-10-21 21:19:03,273 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:03] "GET /api/parties HTTP/1.1" 200 -
+2025-10-21 21:19:03,274 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:03] "[36mGET /static/vibori_icon.png HTTP/1.1[0m" 304 -
+2025-10-21 21:19:03,278 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:03] "GET /api/recaptcha_site_key HTTP/1.1" 200 -
+2025-10-21 21:19:04,695 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:04] "[33mGET /check_vote HTTP/1.1[0m" 404 -
+2025-10-21 21:19:25,058 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:25] "GET / HTTP/1.1" 200 -
+2025-10-21 21:19:25,072 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:25] "GET /api/parties HTTP/1.1" 200 -
+2025-10-21 21:19:25,073 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:25] "GET /api/recaptcha_site_key HTTP/1.1" 200 -
+2025-10-21 21:19:25,074 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:25] "[36mGET /static/vibori_icon.png HTTP/1.1[0m" 304 -
+2025-10-21 21:19:25,456 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:25] "GET /api/parties HTTP/1.1" 200 -
+2025-10-21 21:19:36,018 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:36] "GET /api/parties HTTP/1.1" 200 -
+2025-10-21 21:19:37,437 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:37] "GET / HTTP/1.1" 200 -
+2025-10-21 21:19:37,453 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:37] "GET /api/recaptcha_site_key HTTP/1.1" 200 -
+2025-10-21 21:19:37,455 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:37] "[36mGET /static/vibori_icon.png HTTP/1.1[0m" 304 -
+2025-10-21 21:19:37,455 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:37] "GET /api/parties HTTP/1.1" 200 -
+2025-10-21 21:19:37,709 [INFO] [werkzeug] 192.168.65.1 - - [21/Oct/2025 21:19:37] "[31m[1mGET /api/vote HTTP/1.1[0m" 405 -

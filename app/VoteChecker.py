@@ -2,6 +2,9 @@ from flask import Flask, render_template, request, jsonify, session, redirect, u
 import json
 import os
 
+
+ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD")
+
 app = Flask(__name__)
 
 def load_data():
@@ -20,12 +23,12 @@ def load_data():
         print(f"Ошибка парсинга JSON: {e}")
         return {}, {}
 
-def load_password():
-    try:
-        with open('password.txt', 'r', encoding='utf-8') as f:
-            return f.read().strip()
-    except FileNotFoundError:
-        return ""
+# def load_password():
+#     try:
+#         with open('password.txt', 'r', encoding='utf-8') as f:
+#             return f.read().strip()
+#     except FileNotFoundError:
+#         return ""
 
 def load_parties():
     try:
@@ -117,7 +120,7 @@ def vote():
         if not full_name or not party_id or not admin_password:
             return jsonify({'success': False, 'message': 'Недостаточно данных'})
         
-        correct_password = load_password()
+        correct_password = ADMIN_PASSWORD
         if admin_password != correct_password:
             return jsonify({'success': False, 'message': 'Неверный admin пароль'})
         
