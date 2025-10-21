@@ -1,14 +1,36 @@
-version: "3.9"
-
 services:
-  schoolvoter:
-    build: .
-    container_name: schoolvoter
-    restart: unless-stopped
+  voter-main:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: schoolvoter-main
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1
+      - FLASK_ENV=production
+    command: python main.py
     ports:
       - "7508:5000"
-    env_file:
-      - app/.env
-    volumes:
-      - ./app:/app
-    tty: true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  voter-cik:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: schoolvoter-votechecker
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1
+      - FLASK_ENV=production
+    command: python VoteChecker.py
+    ports:
+      - "7509:5000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

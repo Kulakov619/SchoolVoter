@@ -2,12 +2,13 @@ from JsonDecorator import *
 import logging
 from flask import Flask, request
 import requests
+import os
 
 app = Flask(__name__)
 
-RECAPTCHA_SITE_KEY = "6LfoBPIrAAAAAEL_6NZPo87OAnIPotB80hqcVHBw"
-RECAPTCHA_SECRET_KEY = "6LfoBPIrAAAAAJ9VHd0WenMlnNhMRBtYIHCHqkU_"
-RECAPTCHA_VERIFY_URL = "https://www.google.com/recaptcha/api/siteverify"
+RECAPTCHA_SITE_KEY = os.getenv("RECAPTCHA_SITE_KEY")
+RECAPTCHA_SECRET_KEY = os.getenv("RECAPTCHA_SECRET_KEY")
+RECAPTCHA_VERIFY_URL = os.getenv("RECAPTCHA_VERIFY_URL")
 
 logging.basicConfig(
     level=logging.INFO,
